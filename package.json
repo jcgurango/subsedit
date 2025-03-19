@@ -7,8 +7,10 @@
   "scripts": {
     "dev": "concurrently \"vite\" \"cross-env NODE_ENV=development electron electron/main.js\"",
     "build": "vite build",
+    "start": "electron electron/main.js",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "package": "electron-builder",
+    "dist": "electron-builder --publish never"
   },
   "dependencies": {
     "electron-is-dev": "^3.0.1",
